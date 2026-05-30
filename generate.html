@@ -432,11 +432,7 @@ font-size:14px;
 
 <div class="right-nav">
 
-<!-- NOTIFICATION -->
 
-<div class="nav-icon">
-<i class="fas fa-bell"></i>
-</div>
 
 <!-- BACK BUTTON -->
 
@@ -535,10 +531,6 @@ Enter any topic or paragraph and I will generate intelligent questions, quiz que
 <span>Planner</span>
 </a>
 
-<a href="profile.html">
-<i class="fas fa-user"></i>
-<span>Profile</span>
-</a>
 
 </div>
 
@@ -546,37 +538,6 @@ Enter any topic or paragraph and I will generate intelligent questions, quiz que
 
 <script type="module">
 
-/* FIREBASE */
-
-import { initializeApp }
-from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
-
-import { getAuth }
-from "https://www.gstatic.com/firebasejs/12.13.0/firebase-auth.js";
-
-const firebaseConfig = {
-
-apiKey: "AIzaSyA6RGcEIFPSF25wsMN-7QLg1-EvJrtvLmY",
-
-authDomain: "my-web-e9b90.firebaseapp.com",
-
-projectId: "my-web-e9b90",
-
-storageBucket: "my-web-e9b90.firebasestorage.app",
-
-messagingSenderId: "253275343289",
-
-appId: "1:253275343289:web:169a10b703962d3ae90e68",
-
-measurementId: "G-RDV9JZYJDZ"
-
-};
-
-const app =
-initializeApp(firebaseConfig);
-
-const auth =
-getAuth(app);
 
 
 
@@ -598,10 +559,6 @@ window.location.href = "quiz.html";
 
 if(value.includes("planner")){
 window.location.href = "planner.html";
-}
-
-if(value.includes("profile")){
-window.location.href = "profile.html";
 }
 
 });
