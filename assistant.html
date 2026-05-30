@@ -436,20 +436,8 @@ font-size:14px;
 
 </div>
 
-<div class="right-nav">
 
-<div class="nav-icon">
-<i class="fas fa-bell"></i>
-</div>
 
-<div class="profile">
-
-<img
-id="profileImage"
-src="https://i.imgur.com/6VBx3io.png"
-alt="Profile">
-
-</div>
 
 </div>
 
@@ -527,10 +515,6 @@ Ask me anything and I will respond like a real human assistant.
 <span>Planner</span>
 </a>
 
-<a href="profile.html">
-<i class="fas fa-user"></i>
-<span>Profile</span>
-</a>
 
 </div>
 
@@ -538,49 +522,8 @@ Ask me anything and I will respond like a real human assistant.
 
 <script type="module">
 
-/* FIREBASE */
 
-import { initializeApp }
-from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
 
-import { getAuth }
-from "https://www.gstatic.com/firebasejs/12.13.0/firebase-auth.js";
-
-const firebaseConfig = {
-
-apiKey: "AIzaSyA6RGcEIFPSF25wsMN-7QLg1-EvJrtvLmY",
-
-authDomain: "my-web-e9b90.firebaseapp.com",
-
-projectId: "my-web-e9b90",
-
-storageBucket: "my-web-e9b90.firebasestorage.app",
-
-messagingSenderId: "253275343289",
-
-appId: "1:253275343289:web:169a10b703962d3ae90e68",
-
-measurementId: "G-RDV9JZYJDZ"
-
-};
-
-const app =
-initializeApp(firebaseConfig);
-
-const auth =
-getAuth(app);
-
-/* PROFILE IMAGE */
-
-const savedProfile =
-localStorage.getItem("profileImage");
-
-if(savedProfile){
-
-document.getElementById("profileImage").src =
-savedProfile;
-
-}
 
 /* SEARCH NAVIGATION */
 
